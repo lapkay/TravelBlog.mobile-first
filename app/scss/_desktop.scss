@@ -1,0 +1,272 @@
+   
+   @media screen and (min-width: 1024px) {
+   
+      .header {
+         height: 10vh;
+         display: flex;
+         flex-direction: row;
+         justify-content: space-between;
+         margin-bottom: 20px;
+   
+
+   .logo {
+      font-size: 1.8rem;  
+      margin-left: 20px;
+   }
+   .menu {
+      display: none;
+         }
+
+   nav {
+      
+   .nav-list {
+      display: flex;  
+      justify-content: space-around; 
+      padding: 0 40px 0 0;
+      list-style: none;
+   
+      .list-item {
+         padding: 15px 20px;
+         transition: 0.3s ease;
+         
+         &:hover {
+            transform: scale(1.2);
+            transition: 0.3s ease;
+         }
+
+         a {
+            color: var(--color-light);
+            text-decoration: none;
+            letter-spacing: 2px;
+            font-size: 1.2rem;
+            transition: 0.3s ease;
+
+            &:hover {
+               color: var(--color-red-hover);
+               transition: 0.3s ease;
+               }
+            }
+         }
+      }
+   }
+}
+
+.travel__section {
+
+.content-block {
+   display: flex;
+
+   &:nth-child(2n) {
+      flex-direction: row-reverse;
+      text-align: end;
+
+      .content-text {
+         
+         h2 {
+            font-size: 1.8rem;
+            text-align: end;
+            margin-left: 30px;
+         }
+      }
+   }
+
+.img-block {
+   width: 50%;
+
+   img {
+      width: 100%;
+      height: 100%;
+   }
+} 
+
+.content-text {
+   position: relative;
+   width: 50%;
+   background: var(--background-color-content);
+
+   .post-title {
+      font-size: 1.8rem;
+      text-align: start;
+      padding: 20px 0;
+      margin-right: 30px;
+   }
+
+   .date-block-right {
+      display: block;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+
+      p span {
+         font-size: 1.6rem;
+      }
+   }
+   .date-block-left {
+         position: absolute;
+         top: 10px;
+         left: 10px;
+
+         p {
+            font-size: 1rem;
+         }
+
+         p span {
+            font-size: 1.6rem;
+         }
+      }
+   }   
+
+   &:hover {
+      background: var(--background-color-content-hover);
+      cursor: pointer;
+      transition: 0.3s ease;  
+   }
+}
+
+.content-block-last {
+
+   
+   .post-title-last {
+      top: 200px;
+      left: 50px;
+      font-size: 2rem;  
+   }
+
+   p {  
+      bottom: 50px;
+      left: 30px;
+      }
+   }
+}
+}
+
+@media screen and (min-width: 1450px) {
+
+body {
+margin: 0 30px;
+}
+
+.header {
+
+   margin: 0 0px 30px 0px;
+   
+   .logo {
+      font-size: 2.5rem;  
+      margin-left: 40px;
+   }
+   .menu {
+      display: none;
+         }
+
+   nav {
+      
+      .nav-list {
+      
+         .list-item {
+            padding: 0 60px;
+         
+            a {
+               letter-spacing: 3px;
+               font-size: 1.6rem;
+               }
+            }
+         }
+      }
+   }
+
+.travel__section {
+   background-color: var(--background-color-content);
+   margin: 0 0 30px 0; 
+   width: 70%;
+   height: 100%;
+
+
+   .content-block {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      transition: 0.3s ease;
+
+         .img-block {
+            width: 50%;
+            height: 100%;
+
+            img {
+               max-width: 100%;
+               height: auto;
+
+               &:hover {
+                  opacity: 0.9;
+            }
+         }
+      }
+   }
+
+   .content-block:nth-child(1n) {
+      display: flex;
+      flex-direction: row;
+
+      .post-title {
+         font-size: 1.8rem;
+         font-weight: 400; 
+         margin: 40px 20px 30px 20px;
+         padding: 0;
+      }
+
+      .post-description {
+         font-size: 1rem;
+         margin: 0 20px 0 20px;
+         padding: 0;   
+         }
+      }
+
+   .content-block:nth-child(2n) {
+         display: flex;
+         flex-direction: row-reverse;
+         text-align: end;
+         }
+
+         .content-block-last {
+            
+            img {
+            max-width: 100%;
+      }
+
+            .post-title-last {
+               font-size: 3rem;
+            }
+            p {
+               font-size: 1,4rem;
+            }
+         }
+      }
+
+      .news__section {
+         width: 30%;
+         margin: 0 0 0 20px;
+         height: auto;
+
+         img {
+            width: 100%;
+            height: auto;
+         }
+
+         .news-description {
+            margin-bottom: 20px;
+            
+            .new-text {
+               
+
+               h2 {
+                  font-size: 2rem;
+                  margin-bottom: 30px;
+               }
+
+               p {
+                  font-size: 1.2rem;
+                  margin-right: 100px;
+                  }
+               }
+            }
+         }
+      }

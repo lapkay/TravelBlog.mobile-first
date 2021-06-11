@@ -1,0 +1,33 @@
+
+@media screen and (min-width: 768px) {
+   .header {
+      height: 20vh;
+      background: var(--background-color-light);
+      margin: 0 0 0 0;
+   }
+   
+   main {
+      display: flex;
+
+      .travel__section {
+         margin-right: 10px;
+
+         .content-block-last {
+            padding: 0;
+            margin-bottom: 0;
+      
+            .post-title-last {
+               top: 50px;
+               left: 20px;
+               font-size: 1.4rem;
+            }
+      
+            p {
+               font-size: .6rem;
+               bottom: 50px;
+               left: 20px;
+            }
+         }
+      }
+   }
+}
